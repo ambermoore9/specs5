@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 st.title('Supermarket Sales Data')
 
 df = pd.read_csv('supermarket.csv')
