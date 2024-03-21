@@ -12,7 +12,7 @@ top_10_stores = sorted_df.head(10)
 
 total = df['store_sales'].sum()
 formatted_total = "${:,.2f}".format(total)
-st.header(f'Total Amount of Sales All Stores is {formatted_total}')
+st.header(f'Total Amount of Sales is {formatted_total}')
 
 top_10_stores_df = pd.DataFrame({'store_sales': top_10_stores['store_sales'].values}, index=top_10_stores['store_id'])
 
